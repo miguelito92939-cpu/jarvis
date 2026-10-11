@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050b16">
+  <title>J.A.R.V.I.S. — Assistente Pessoal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <div class="brand"><div class="brand-mark"><span></span><span></span><span></span></div><div><strong>J.A.R.V.I.S.</strong><small>JUST A RATHER VERY INTELLIGENT SYSTEM</small></div></div>
+    <div class="system-status"><span class="status-dot"></span><span id="systemStatus">INTERFACE ONLINE</span><span class="separator"></span><span id="clock">--:--:--</span></div>
+  </header>
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="section-label">SISTEMA</div>
+      <button class="nav-item active" data-view="assistant"><span>◉</span> Assistente <kbd>01</kbd></button>
+      <button class="nav-item" data-view="memory"><span>▤</span> Memória local <kbd>02</kbd></button>
+      <button class="nav-item" data-view="commands"><span>⌘</span> Comandos <kbd>03</kbd></button>
+      <div class="sidebar-bottom"><div class="mini-orb"><div></div></div><strong>Todos os sistemas</strong><span class="muted">Interface pronta para integração</span><div class="side-line"></div><div class="privacy"><span>▣</span><div><b>Privacidade</b><small>Este protótipo não envia dados</small></div></div></div>
+    </aside>
+    <section class="content">
+      <div class="heading-row"><div><div class="eyebrow">CENTRO DE COMANDO / <span id="viewCode">01</span></div><h1 id="pageTitle">Bom ter você de volta.</h1><p id="pageSubtitle">Estou pronto para receber suas instruções.</p></div><div class="pill"><span class="status-dot"></span> MODO LOCAL · DEMO</div></div>
+      <div class="dashboard">
+        <section class="hero-panel panel">
+          <div class="panel-top"><span>INTERFACE NEURAL</span><span class="live"><i></i> ATIVO</span></div>
+          <div class="orb-area"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div><div class="orb-core"><div class="core-inner">J</div></div><div class="orb-label label-left">NÚCLEO <b>01</b></div><div class="orb-label label-right">STATUS <b>PRONTO</b></div></div>
+          <div class="hero-caption"><strong id="orbTitle">JARVIS está à sua disposição.</strong><span id="orbSubtitle">Digite uma mensagem ou experimente a entrada por voz.</span></div>
+          <div class="hero-actions"><button class="primary-btn" id="voiceBtn"><span class="mic-icon">♩</span><span id="voiceBtnText">INICIAR VOZ</span></button><button class="icon-btn" id="clearBtn" title="Limpar conversa">↻</button></div>
+          <div class="voice-note" id="voiceNote">A voz depende do suporte do navegador e da disponibilidade de reconhecimento no dispositivo.</div>
+        </section>
+        <section class="chat-panel panel">
+          <div class="panel-top"><span>CANAL DE COMUNICAÇÃO</span><span class="tiny-tag">CHAT / 01</span></div>
+          <div class="chat-messages" id="messages" aria-live="polite"><div class="message jarvis-message"><div class="avatar">J</div><div class="message-body"><div class="message-author">J.A.R.V.I.S. <span>AGORA</span></div><p>Sistemas inicializados. Estou pronto para ajudar. Esta é uma interface de demonstração: a inteligência avançada e o controle real do aparelho ainda precisam ser conectados.</p></div></div></div>
+          <form id="chatForm" class="composer"><input id="messageInput" autocomplete="off" placeholder="Digite seu comando..." aria-label="Digite sua mensagem"><button type="submit" aria-label="Enviar mensagem">➤</button></form>
+          <div class="composer-hint"><span>ENTER PARA ENVIAR</span><span>◈ CANAL SEGURO · DEMO LOCAL</span></div>
+        </section>
+      </div>
+      <div class="section-label lower-label">MÓDULOS DO SISTEMA</div>
+      <div class="modules">
+        <article class="module-card panel"><div class="module-icon">◉</div><div class="module-meta"><span>01 / ÁUDIO</span><b>Interface de voz</b><small id="audioModule">Aguardando ativação</small></div><span class="module-state">PRONTO</span></article>
+        <article class="module-card panel"><div class="module-icon">▤</div><div class="module-meta"><span>02 / MEMÓRIA</span><b>Memória do navegador</b><small id="memoryCount">0 itens salvos</small></div><span class="module-state">LOCAL</span></article>
+        <article class="module-card panel"><div class="module-icon">⌘</div><div class="module-meta"><span>03 / AÇÕES</span><b>Comandos disponíveis</b><small>Somente demonstração segura</small></div><span class="module-state">DEMO</span></article>
+      </div>
+      <footer><span>J.A.R.V.I.S. INTERFACE v0.1</span><span>ASSISTENTE EXPERIMENTAL · NÃO CONECTADO A UMA IA</span></footer>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
